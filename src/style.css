@@ -1,0 +1,209 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #A9746E;
+  --secondary-color: #D9CAB3;
+  --third-color: #F5F5F5;
+  --fourth-color: #555555;
+}
+h4{
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 600;
+}
+li,a,button{
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+
+
+}
+header{
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+.logo{
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav-links li{
+ list-style: none;
+ display: inline;
+ padding: 0px 20px;
+}
+.nav-links li a:hover{
+  transition: all 0.3s ease-in;
+ color: aquamarine;
+}
+.cta{
+  padding: 9px 20px;
+  background-color: #A9746E;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+ color: beige;
+ font-size: 15px;
+ box-shadow: -1px -2px 5px 0px rgba(0,0,0,0.75);
+}
+.cta:hover{
+  transition: all 0.3s ease-in;
+}
+.hero{
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("/images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.hero-container{
+  color: var(--primary-color);
+  font-family: "Poetsen One", sans-serif; 
+  padding: 10px;
+  font-size: 25px;
+  margin-bottom: 1rem;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.hero-container h3{
+  font-size: 60px;
+  padding: 20px;
+}
+.hero-container p{
+  padding: 10px;
+  max-width: 100%;
+  gap: 20%;
+  margin-bottom: 20px;
+}
+.heading{
+   text-align: center;
+   margin: 20px;
+   font-family: "Poetsen One", sans-serif; 
+   font-size: 20px;
+   color: #A9746E;
+
+}
+.card-container , .amenities-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+
+}
+.card {
+  width: 325px;
+  background-color:var(--secondary-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: -1px -2px 5px 0px rgba(0,0,0,0.75);
+  margin: 40px;
+
+}
+.card img{
+  width: 100%;
+  height: auto;
+}
+ 
+.card-content , .items{
+    padding: 20px ;
+}
+.card-content h3{
+  color: #A9746E;
+  font-size: 20px;
+  font-family: "Poetsen One", sans-serif; 
+  margin-bottom: 8px;
+  text-align: center;
+}
+.card-content p ,.amenities-card p{
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  color:black;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.2;
+}
+.btn{
+  padding: 9px 20px;
+  display: inline-block;
+  background-color: #A9746E;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}
+.amenities-card{
+ width: 200px;
+ background-color:var(--secondary-color);
+ border-radius: 2px;
+ overflow: hidden;
+ box-shadow: -1px -2px 5px 0px rgba(0,0,0,0.75);
+ margin: 40px;
+
+}
+.amenities-card img{
+  width: 100%;
+  height: auto;
+}
+.amenities-card h3{
+  color:brown;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+.contact-form{
+  background-color: #A9746E;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  text-align: center;
+   margin-bottom: 8px;
+}
+.contact-form label{
+  margin: 10px 0 5px;
+}
+.contact-form input ,textarea{
+  padding: 10px;
+  margin-bottom: 8px;
+}
+.contact-form button{
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: black;
+  background-color: #A9746E;
+  border: 2px solid whitesmoke;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.footer{
+  background-color: #A9746E;
+  font-family: "Oswald", sans-serif; 
+  padding: 40px 10%;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+
+}
+.information h3{
+  text-align: center;
+  color: #000;
+  margin-bottom: 8px;
+
+}
